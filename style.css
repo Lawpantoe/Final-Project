@@ -1,29 +1,74 @@
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .animated-box {
-        width: 100px;
-        height: 100px;
-        background-color: #3498db;
-        border-radius: 10px;
-        animation: moveAnimation 2s infinite alternate;
-    }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
 
-    @keyframes moveAnimation {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(20px);
-        }
-    }
-</style>
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background: url('oZCrvS.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.features,
+.downloads,
+.documentation,
+.community,
+.contact {
+    /* Add styling for each section */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+
